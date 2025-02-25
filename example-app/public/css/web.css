@@ -1,0 +1,62 @@
+.navUl {
+    display: flex;
+
+}
+
+.navUl li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 20px;
+}
+
+/* .booksMain {
+    display: flex;
+    justify-content: space-around;
+    overflow: scroll;
+} */
+
+.booksMain {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical scroll */
+    white-space: nowrap;
+    /* scroll-behavior: smooth; */
+}
+
+
+
+.booksCard{
+    width: 20vw;
+    min-width: 300px;
+    margin: 10px;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.booksMain::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .booksMain {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+#filled:hover {
+  background-color: white !important; 
+  color: black !important;
+}
+
+#outlined:hover {
+  background-color: #9B5DE5; 
+  color: white;
+}
